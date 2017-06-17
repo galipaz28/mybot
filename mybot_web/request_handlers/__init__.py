@@ -1,0 +1,3 @@
+from home_handler import HomeHandler
+from all_users_avg_handler import AllUsersAvgHandler
+from user_avg_handler import UserAvgHandler

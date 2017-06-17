@@ -1,0 +1,405 @@
+2017-06-16 19:24:44,681 Initialized in: C:\Python27\Scripts
+2017-06-16 19:24:44,710 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:24:45,721 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4814
+2017-06-16 19:24:46,381 Loading plugins
+2017-06-16 19:24:46,381 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-16 19:24:46,391 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x033B5F10>
+2017-06-16 19:24:46,391 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-16 19:24:46,392 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x033B5BB0>
+2017-06-16 19:24:46,394 Registering jobs for UserAvgPlugin
+2017-06-16 19:24:46,394 No jobs registered for UserAvgPlugin
+2017-06-16 19:24:46,394 Registering jobs for AllUsersAvgPlugin
+2017-06-16 19:24:46,614 got process_hello
+2017-06-16 19:24:46,721 got process_reconnect_url
+2017-06-16 19:24:46,829 got process_pong
+2017-06-16 19:24:47,463 got process_presence_change
+2017-06-16 19:24:48,523 got process_presence_change
+2017-06-16 19:24:50,216 got process_pong
+2017-06-16 19:24:50,542 got process_presence_change
+2017-06-16 19:24:51,407 got process_user_typing
+2017-06-16 19:24:51,625 got process_message
+2017-06-16 19:24:51,627 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:24:52,128 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 19:24:52,138 output from UserAvgPlugin
+2017-06-16 19:24:52,253 got process_desktop_notification
+2017-06-16 19:24:54,410 got process_pong
+2017-06-16 19:24:58,311 got process_pong
+2017-06-16 19:24:58,938 got process_user_typing
+2017-06-16 19:24:59,040 got process_message
+2017-06-16 19:24:59,042 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:24:59,568 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 19:24:59,571 output from UserAvgPlugin
+2017-06-16 19:25:02,233 got process_pong
+2017-06-16 19:25:06,302 got process_pong
+2017-06-16 19:25:10,303 got process_pong
+2017-06-16 19:25:14,282 got process_pong
+2017-06-16 19:25:18,315 got process_pong
+2017-06-16 19:25:22,256 got process_pong
+2017-06-16 19:25:26,617 got process_pong
+2017-06-16 19:25:30,299 got process_pong
+2017-06-16 19:25:30,825 got process_user_typing
+2017-06-16 19:25:34,138 got process_user_typing
+2017-06-16 19:25:34,246 got process_reconnect_url
+2017-06-16 19:25:34,355 got process_pong
+2017-06-16 19:25:34,664 got process_user_typing
+2017-06-16 19:25:34,765 got process_message
+2017-06-16 19:25:34,766 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:25:35,335 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 19:25:35,345 output from UserAvgPlugin
+2017-06-16 19:25:38,246 got process_pong
+2017-06-16 19:25:40,611 got process_user_typing
+2017-06-16 19:25:41,217 got process_message
+2017-06-16 19:25:41,220 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:25:41,707 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:25:41,713 output from UserAvgPlugin
+2017-06-16 19:25:42,220 got process_pong
+2017-06-16 19:25:46,290 got process_pong
+2017-06-16 19:25:46,400 Problem in job run: <class 'plugins.all_users_avg_plugin.AllUsersAvgJob'>
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\rtmbot\core.py", line 234, in do_jobs
+    job_output = job.run(self.slack_client)
+  File "C:\Users\user\Desktop\myproject\mybot\plugins\all_users_avg_plugin.py", line 40, in run
+    users_avg = self._get_all_users_avg()
+  File "C:\Users\user\Desktop\myproject\mybot\plugins\all_users_avg_plugin.py", line 28, in _get_all_users_avg
+    users_numbers_sum = sum(user['sum'] for user in users_numbers_dict)
+  File "C:\Users\user\Desktop\myproject\mybot\plugins\all_users_avg_plugin.py", line 28, in <genexpr>
+    users_numbers_sum = sum(user['sum'] for user in users_numbers_dict)
+TypeError: string indices must be integers
+2017-06-16 19:27:28,244 Initialized in: C:\Python27\Scripts
+2017-06-16 19:27:28,246 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:29,160 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4814
+2017-06-16 19:27:29,779 Loading plugins
+2017-06-16 19:27:29,779 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-16 19:27:29,782 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x03A45F10>
+2017-06-16 19:27:29,782 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-16 19:27:29,782 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x03A45BB0>
+2017-06-16 19:27:29,782 Registering jobs for UserAvgPlugin
+2017-06-16 19:27:29,782 No jobs registered for UserAvgPlugin
+2017-06-16 19:27:29,782 Registering jobs for AllUsersAvgPlugin
+2017-06-16 19:27:29,983 got process_hello
+2017-06-16 19:27:30,082 got process_message
+2017-06-16 19:27:30,085 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:30,621 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 433
+2017-06-16 19:27:30,625 output from UserAvgPlugin
+2017-06-16 19:27:30,734 got process_message
+2017-06-16 19:27:30,736 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:31,213 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 19:27:31,219 output from UserAvgPlugin
+2017-06-16 19:27:31,322 got process_reconnect_url
+2017-06-16 19:27:31,421 got process_pong
+2017-06-16 19:27:31,726 got process_presence_change
+2017-06-16 19:27:33,253 got process_pong
+2017-06-16 19:27:34,210 got process_reconnect_url
+2017-06-16 19:27:37,319 got process_pong
+2017-06-16 19:27:39,910 got process_user_typing
+2017-06-16 19:27:40,516 got process_message
+2017-06-16 19:27:40,519 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:41,094 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 19:27:41,099 output from UserAvgPlugin
+2017-06-16 19:27:41,505 got process_pong
+2017-06-16 19:27:45,290 got process_pong
+2017-06-16 19:27:49,282 got process_pong
+2017-06-16 19:27:53,210 got process_pong
+2017-06-16 19:27:54,250 got process_user_typing
+2017-06-16 19:27:54,651 got process_message
+2017-06-16 19:27:54,653 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:55,302 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:27:55,306 output from UserAvgPlugin
+2017-06-16 19:27:57,359 got process_pong
+2017-06-16 19:27:58,226 got process_user_typing
+2017-06-16 19:27:58,953 got process_message
+2017-06-16 19:27:58,954 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:27:59,443 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:27:59,447 output from UserAvgPlugin
+2017-06-16 19:28:01,266 got process_pong
+2017-06-16 19:28:05,270 got process_pong
+2017-06-16 19:28:09,272 got process_pong
+2017-06-16 19:28:13,295 got process_pong
+2017-06-16 19:28:17,249 got process_pong
+2017-06-16 19:28:21,220 got process_pong
+2017-06-16 19:28:25,290 got process_pong
+2017-06-16 19:28:29,253 got process_pong
+2017-06-16 19:28:29,792 output from AllUsersAvgPlugin
+2017-06-16 19:28:33,273 got process_pong
+2017-06-16 19:28:37,272 got process_pong
+2017-06-16 19:28:41,219 got process_pong
+2017-06-16 19:28:45,322 got process_pong
+2017-06-16 19:28:49,296 got process_pong
+2017-06-16 19:28:53,266 got process_pong
+2017-06-16 19:28:57,223 got process_pong
+2017-06-16 19:29:01,305 got process_pong
+2017-06-16 19:29:05,278 got process_pong
+2017-06-16 19:29:09,267 got process_pong
+2017-06-16 19:29:13,325 got process_pong
+2017-06-16 19:29:17,279 got process_pong
+2017-06-16 19:29:21,253 got process_pong
+2017-06-16 19:29:25,221 got process_pong
+2017-06-16 19:29:29,321 got process_pong
+2017-06-16 19:29:33,266 got process_pong
+2017-06-16 19:29:34,128 got process_reconnect_url
+2017-06-16 19:29:37,217 got process_pong
+2017-06-16 19:29:41,283 got process_pong
+2017-06-16 19:29:45,221 got process_pong
+2017-06-16 19:29:48,628 got process_user_typing
+2017-06-16 19:29:48,928 got process_message
+2017-06-16 19:29:48,930 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:29:49,594 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:29:49,601 output from UserAvgPlugin
+2017-06-16 19:29:49,905 got process_pong
+2017-06-16 19:29:50,709 got process_user_typing
+2017-06-16 19:29:51,009 got process_message
+2017-06-16 19:29:51,010 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:29:51,575 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:29:51,579 output from UserAvgPlugin
+2017-06-16 19:29:53,289 got process_pong
+2017-06-16 19:29:57,243 got process_pong
+2017-06-16 19:30:01,213 got process_pong
+2017-06-16 19:30:05,243 got process_pong
+2017-06-16 19:30:09,316 got process_pong
+2017-06-16 19:30:13,303 got process_pong
+2017-06-16 19:30:15,275 got process_user_typing
+2017-06-16 19:30:16,431 got process_message
+2017-06-16 19:30:16,434 Starting new HTTPS connection (1): slack.com
+2017-06-16 19:30:17,010 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-16 19:30:17,028 output from UserAvgPlugin
+2017-06-16 19:30:17,334 got process_pong
+2017-06-16 19:30:19,298 got process_desktop_notification
+2017-06-16 19:30:21,278 got process_pong
+2017-06-16 19:30:25,394 got process_pong
+2017-06-16 19:30:29,351 got process_pong
+2017-06-16 19:30:29,887 output from AllUsersAvgPlugin
+2017-06-16 19:30:33,283 got process_pong
+2017-06-16 19:30:37,490 got process_pong
+2017-06-16 19:30:41,459 got process_pong
+2017-06-16 19:30:45,227 got process_pong
+2017-06-16 19:30:49,381 got process_pong
+2017-06-16 21:06:06,257 Initialized in: C:\Python27\Scripts
+2017-06-16 21:06:06,282 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:06:07,275 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4848
+2017-06-16 21:06:07,852 Loading plugins
+2017-06-16 21:06:07,854 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-16 21:06:07,857 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x039C5F70>
+2017-06-16 21:06:07,857 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-16 21:06:07,858 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x039C5BB0>
+2017-06-16 21:06:07,858 Registering jobs for UserAvgPlugin
+2017-06-16 21:06:07,858 No jobs registered for UserAvgPlugin
+2017-06-16 21:06:07,858 Registering jobs for AllUsersAvgPlugin
+2017-06-16 21:06:08,059 got process_hello
+2017-06-16 21:06:08,161 got process_message
+2017-06-16 21:06:08,163 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:06:08,895 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 21:06:08,901 output from UserAvgPlugin
+2017-06-16 21:06:09,006 got process_reconnect_url
+2017-06-16 21:06:09,108 got process_presence_change
+2017-06-16 21:06:09,223 got process_pong
+2017-06-16 21:06:09,322 got process_presence_change
+2017-06-16 21:06:09,934 got process_presence_change
+2017-06-16 21:06:11,290 got process_pong
+2017-06-16 21:06:11,601 got process_user_typing
+2017-06-16 21:06:11,703 got process_message
+2017-06-16 21:06:11,704 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:06:12,201 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 21:06:12,207 output from UserAvgPlugin
+2017-06-16 21:06:14,596 got process_user_typing
+2017-06-16 21:06:15,236 got process_pong
+2017-06-16 21:06:15,753 got process_message
+2017-06-16 21:06:15,756 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:06:16,226 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 21:06:16,232 output from UserAvgPlugin
+2017-06-16 21:06:19,250 got process_pong
+2017-06-16 21:06:23,302 got process_pong
+2017-06-16 21:06:27,269 got process_pong
+2017-06-16 21:06:31,252 got process_pong
+2017-06-16 21:06:34,339 got process_reconnect_url
+2017-06-16 21:06:35,296 got process_pong
+2017-06-16 21:06:39,260 got process_pong
+2017-06-16 21:06:43,226 got process_pong
+2017-06-16 21:06:47,319 got process_pong
+2017-06-16 21:06:51,203 got process_pong
+2017-06-16 21:06:52,005 got process_presence_change
+2017-06-16 21:06:56,723 got process_pong
+2017-06-16 21:06:59,237 got process_pong
+2017-06-16 21:07:03,369 got process_pong
+2017-06-16 21:07:07,219 got process_pong
+2017-06-16 21:07:07,946 output from AllUsersAvgPlugin
+2017-06-16 21:07:11,262 got process_pong
+2017-06-16 21:07:15,421 got process_pong
+2017-06-16 21:07:19,311 got process_pong
+2017-06-16 21:07:23,262 got process_pong
+2017-06-16 21:07:27,299 got process_pong
+2017-06-16 21:07:31,230 got process_pong
+2017-06-16 21:07:35,296 got process_pong
+2017-06-16 21:07:39,249 got process_pong
+2017-06-16 21:07:43,219 got process_pong
+2017-06-16 21:07:47,278 got process_pong
+2017-06-16 21:07:51,221 got process_pong
+2017-06-16 21:07:55,269 got process_pong
+2017-06-16 21:07:59,233 got process_pong
+2017-06-16 21:08:03,269 got process_pong
+2017-06-16 21:08:07,292 got process_pong
+2017-06-16 21:08:11,259 got process_pong
+2017-06-16 21:08:15,226 got process_pong
+2017-06-16 21:08:19,292 got process_pong
+2017-06-16 21:08:23,230 got process_pong
+2017-06-16 21:08:27,220 got process_pong
+2017-06-16 21:08:31,292 got process_pong
+2017-06-16 21:08:35,260 got process_pong
+2017-06-16 21:08:39,322 got process_pong
+2017-06-16 21:08:43,246 got process_pong
+2017-06-16 21:08:47,328 got process_pong
+2017-06-16 21:08:51,282 got process_pong
+2017-06-16 21:08:55,243 got process_pong
+2017-06-16 21:08:59,220 got process_pong
+2017-06-16 21:09:03,290 got process_pong
+2017-06-16 21:09:07,288 got process_pong
+2017-06-16 21:11:16,173 Initialized in: C:\Python27\Scripts
+2017-06-16 21:11:16,197 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:11:17,171 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4848
+2017-06-16 21:11:17,888 Loading plugins
+2017-06-16 21:11:17,888 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-16 21:11:17,903 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x033C5F70>
+2017-06-16 21:11:17,903 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-16 21:11:17,904 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x033C5BB0>
+2017-06-16 21:11:17,904 Registering jobs for UserAvgPlugin
+2017-06-16 21:11:17,904 No jobs registered for UserAvgPlugin
+2017-06-16 21:11:17,904 Registering jobs for AllUsersAvgPlugin
+2017-06-16 21:11:18,105 got process_hello
+2017-06-16 21:11:18,213 got process_message
+2017-06-16 21:11:18,322 got process_reconnect_url
+2017-06-16 21:11:18,430 got process_pong
+2017-06-16 21:11:20,049 got process_presence_change
+2017-06-16 21:11:21,226 got process_pong
+2017-06-16 21:11:21,660 got process_user_typing
+2017-06-16 21:11:22,673 got process_message
+2017-06-16 21:11:22,674 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:11:23,506 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 21:11:23,509 output from UserAvgPlugin
+2017-06-16 21:11:25,273 got process_pong
+2017-06-16 21:11:25,809 got process_user_typing
+2017-06-16 21:11:26,012 got process_message
+2017-06-16 21:11:26,013 Starting new HTTPS connection (1): slack.com
+2017-06-16 21:11:26,585 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-16 21:11:26,591 output from UserAvgPlugin
+2017-06-16 21:11:29,313 got process_pong
+2017-06-16 21:11:33,276 got process_pong
+2017-06-16 21:11:37,311 got process_pong
+2017-06-16 21:11:41,266 got process_pong
+2017-06-16 21:11:45,230 got process_pong
+2017-06-16 21:11:49,293 got process_pong
+2017-06-16 21:11:53,244 got process_pong
+2017-06-16 21:11:57,223 got process_pong
+2017-06-16 21:12:01,273 got process_pong
+2017-06-16 21:12:05,318 got process_pong
+2017-06-16 21:12:09,243 got process_pong
+2017-06-16 21:12:13,217 got process_pong
+2017-06-16 21:12:17,323 got process_pong
+2017-06-16 21:12:17,947 output from AllUsersAvgPlugin
+2017-06-16 21:12:21,290 got process_pong
+2017-06-17 12:11:22,181 Initialized in: C:\Python27\Scripts
+2017-06-17 12:11:22,283 Starting new HTTPS connection (1): slack.com
+2017-06-17 12:11:23,641 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4832
+2017-06-17 12:11:24,532 Loading plugins
+2017-06-17 12:11:24,532 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-17 12:11:24,878 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x03B75F70>
+2017-06-17 12:11:24,880 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-17 12:11:24,986 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x03B75BB0>
+2017-06-17 12:11:24,986 Registering jobs for UserAvgPlugin
+2017-06-17 12:11:24,986 No jobs registered for UserAvgPlugin
+2017-06-17 12:11:24,986 Registering jobs for AllUsersAvgPlugin
+2017-06-17 12:11:24,986 got process_hello
+2017-06-17 12:11:25,122 got process_reconnect_url
+2017-06-17 12:11:25,224 got process_pong
+2017-06-17 12:11:25,426 got process_presence_change
+2017-06-17 12:11:25,526 got process_presence_change
+2017-06-17 12:11:25,726 got process_user_typing
+2017-06-17 12:11:26,128 got process_message
+2017-06-17 12:11:26,131 Starting new HTTPS connection (1): slack.com
+2017-06-17 12:11:26,601 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-17 12:11:26,608 output from UserAvgPlugin
+2017-06-17 12:11:26,707 got process_presence_change
+2017-06-17 12:11:29,315 got process_pong
+2017-06-17 12:11:33,227 got process_pong
+2017-06-17 12:11:33,428 got process_presence_change
+2017-06-17 12:11:34,434 got process_user_typing
+2017-06-17 12:11:34,734 got process_message
+2017-06-17 12:11:34,736 Starting new HTTPS connection (1): slack.com
+2017-06-17 12:11:35,361 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-17 12:11:35,368 output from UserAvgPlugin
+2017-06-17 12:11:36,069 got process_reconnect_url
+2017-06-17 12:11:37,673 got process_pong
+2017-06-17 12:11:37,773 got process_user_typing
+2017-06-17 12:11:37,973 got process_message
+2017-06-17 12:11:41,285 got process_pong
+2017-06-17 12:11:45,295 got process_pong
+2017-06-17 12:11:49,210 got process_pong
+2017-06-17 12:11:53,825 got process_pong
+2017-06-17 12:11:57,236 got process_pong
+2017-06-17 12:12:01,750 got process_pong
+2017-06-17 12:12:05,263 got process_pong
+2017-06-17 12:12:09,276 got process_pong
+2017-06-17 12:12:13,288 got process_pong
+2017-06-17 12:12:17,301 got process_pong
+2017-06-17 12:12:21,213 got process_pong
+2017-06-17 12:12:25,025 output from AllUsersAvgPlugin
+2017-06-17 12:12:25,828 got process_pong
+2017-06-17 22:56:26,848 Initialized in: C:\Python27\Scripts
+2017-06-17 22:56:26,944 Starting new HTTPS connection (1): slack.com
+2017-06-17 22:56:28,101 https://slack.com:443 "POST /api/rtm.start HTTP/1.1" 200 4854
+2017-06-17 22:56:28,680 Loading plugins
+2017-06-17 22:56:28,680 Importing plugins.user_avg_plugin.UserAvgPlugin
+2017-06-17 22:56:28,688 Plugin registered: <plugins.user_avg_plugin.UserAvgPlugin object at 0x036CFA10>
+2017-06-17 22:56:28,688 Importing plugins.all_users_avg_plugin.AllUsersAvgPlugin
+2017-06-17 22:56:28,690 Plugin registered: <plugins.all_users_avg_plugin.AllUsersAvgPlugin object at 0x036B5BB0>
+2017-06-17 22:56:28,691 Registering jobs for UserAvgPlugin
+2017-06-17 22:56:28,691 No jobs registered for UserAvgPlugin
+2017-06-17 22:56:28,691 Registering jobs for AllUsersAvgPlugin
+2017-06-17 22:56:28,892 got process_hello
+2017-06-17 22:56:28,993 got process_reconnect_url
+2017-06-17 22:56:29,092 got process_pong
+2017-06-17 22:56:29,493 got process_presence_change
+2017-06-17 22:56:29,594 got process_presence_change
+2017-06-17 22:56:30,196 got process_user_typing
+2017-06-17 22:56:30,296 got process_message
+2017-06-17 22:56:30,298 Starting new HTTPS connection (1): slack.com
+2017-06-17 22:56:30,805 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 491
+2017-06-17 22:56:30,812 output from UserAvgPlugin
+2017-06-17 22:56:30,911 got process_presence_change
+2017-06-17 22:56:32,213 got process_pong
+2017-06-17 22:56:34,118 got process_user_typing
+2017-06-17 22:56:34,319 got process_message
+2017-06-17 22:56:34,323 output from UserAvgPlugin
+2017-06-17 22:56:36,226 got process_pong
+2017-06-17 22:56:37,328 got process_reconnect_url
+2017-06-17 22:56:37,529 got process_user_typing
+2017-06-17 22:56:37,729 got process_message
+2017-06-17 22:56:37,734 output from UserAvgPlugin
+2017-06-17 22:56:40,239 got process_pong
+2017-06-17 22:56:43,846 got process_user_typing
+2017-06-17 22:56:44,249 got process_pong
+2017-06-17 22:56:44,651 got process_message
+2017-06-17 22:56:44,651 Starting new HTTPS connection (1): slack.com
+2017-06-17 22:56:45,395 https://slack.com:443 "POST /api/users.info HTTP/1.1" 200 500
+2017-06-17 22:56:45,401 output from UserAvgPlugin
+2017-06-17 22:56:46,703 got process_user_typing
+2017-06-17 22:56:46,903 got process_message
+2017-06-17 22:56:46,924 output from UserAvgPlugin
+2017-06-17 22:56:48,227 got process_pong
+2017-06-17 22:56:52,236 got process_pong
+2017-06-17 22:56:56,045 got process_user_typing
+2017-06-17 22:56:56,246 got process_pong
+2017-06-17 22:56:56,648 got process_message
+2017-06-17 22:56:56,654 output from UserAvgPlugin
+2017-06-17 22:57:00,260 got process_pong
+2017-06-17 22:57:04,269 got process_pong
+2017-06-17 22:57:08,279 got process_pong
+2017-06-17 22:57:12,290 got process_pong
+2017-06-17 22:57:16,302 got process_pong
+2017-06-17 22:57:20,214 got process_pong
+2017-06-17 22:57:24,322 got process_pong
+2017-06-17 22:57:28,334 got process_pong
+2017-06-17 22:57:28,736 output from AllUsersAvgPlugin
+2017-06-17 22:57:32,246 got process_pong
+2017-06-17 22:57:36,355 got process_pong
+2017-06-17 22:57:40,365 got process_pong
+2017-06-17 22:57:44,276 got process_pong
+2017-06-17 22:57:48,286 got process_pong
